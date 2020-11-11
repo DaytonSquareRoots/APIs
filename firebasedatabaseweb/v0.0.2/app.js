@@ -1,3 +1,4 @@
+///This is the same thing as https://api.daytonsquareroots.org/firebasedatabaseweb/jsclient.js.
 function flutterFirebaseDatabaseWeb_on(ref, type, callbackID, modifications) {
    var query = firebase.database().ref(ref);
    JSON.parse(modifications).forEach(function (mod) {
@@ -138,17 +139,16 @@ function flutterFirebaseDatabaseWeb_goOnline() {
 }
 
 function flutterFirebaseDatabaseWeb_set(ref, value, callbackID) {
-   firebase.database().ref(ref).set(value).then(()=> {
+   firebase.database().ref(ref).set(JSON.parse(value)).then(()=> {
       runFlutterFirebaseDatabaseWebDartCallback({ "callbackID": callbackID});
    });
 }
 
 function flutterFirebaseDatabaseWeb_update(ref, value, callbackID) {
-   firebase.database().ref(ref).update(value).then(()=> {
+   firebase.database().ref(ref).update(JSON.parse(value)).then(()=> {
       runFlutterFirebaseDatabaseWebDartCallback({"callbackID" : callbackID});
    });
 }
-
 window.logger = (flutter_value) => {
    console.log({ js_context: this, flutter_value });
 }
