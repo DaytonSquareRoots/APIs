@@ -48117,7 +48117,7 @@ F.TM.prototype={
 $0:function(){},
 $S:2}
 F.TN.prototype={
-$0:function(){T.Xt("https://pub.dev/packages/firebasedatabasewebunofficial")},
+$0:function(){T.Xt("https://pub.dev/packages/firebase_db_web_unofficial")},
 $S:2}
 E.MO.prototype={}
 E.hy.prototype={
