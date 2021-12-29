@@ -1,3 +1,5 @@
+console.error("DEVELOPERS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1!!!!!!!!ONE!!!!!!1!!!! PLEASE MIGRATE TO THE OFFICIAL PACKAGE BY JUNE 1 2022!!! THIS PACKAGE WILL BE DELETED THEN!!!")
+
 ///This is the same thing as https://api.daytonsquareroots.org/firebasedatabaseweb/jsclient.js.
 function flutterFirebaseDatabaseWeb_on(ref, type, callbackID, modifications) {
    var query = firebase.database().ref(ref);
